@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Features from "../data/featuresData";
+import Features from "../data/FeaturesData";
 import meeting from "../../assets/meeting.jpg";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import RemoveCircleOutlineRoundedIcon from "@mui/icons-material/RemoveCircleOutlineRounded";

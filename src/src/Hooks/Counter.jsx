@@ -1,7 +1,7 @@
 import { useCountUp } from "react-countup";
-import CounterItem from "./counterItem";
+import CounterItem from "./CounterItem";
 import '../../Stylesheets/Home.css'
-import Features from "../data/featuresData";
+import Features from "../data/FeaturesData";
 
 
 
