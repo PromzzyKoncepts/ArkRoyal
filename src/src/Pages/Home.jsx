@@ -4,7 +4,7 @@ import "../../Stylesheets/Home.css";
 import AboutCounter from "../Hooks/Counter";
 import CitiesSlider from "../components/Slider";
 import People from '../data/People'
-import Featuring from "../components/featuring";
+import Featuring from "../components/Featuring";
 import Footer from "../components/Footer";
 import Events from "../components/Events";
 import Slider2 from "../components/Slider2";
