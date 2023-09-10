@@ -1,0 +1,54 @@
+.PeopleCont {
+  box-sizing: border-box;
+  background-color: #ffffff10;
+  /* padding-top: 15px; */
+  width: 100%;
+  border-radius: 9px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.people_small {
+  /* margin: -400px; */
+  font-size: 12px;
+}
+
+.card_details {
+  /* width: 90%; */
+  padding: 0 10px;
+  margin: auto;
+}
+
+
+.people_img {
+  display: flex;
+  margin: 0 auto;
+  height: 300px;
+  /* background-size: cover; */
+  width: 90%;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: top;
+  /* border: 1px solid white; */
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  /* height: auto; */
+  /* background-color: #fff; */
+}
+.people_title {
+  /* margin-left: 50px; */
+  /* width: 100%; */
+  font-weight: 600;
+  padding-top: 20px;
+  /* border-radius: 5px; */
+  color: aliceblue;
+  font-size: 17px;
+}
+.people_description {
+  /* width: 80%; */
+  font-size: 14px;
+  /* margin: 10px auto; */
+  color: #f4f4f4;
+}

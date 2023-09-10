@@ -1,0 +1,247 @@
+.AboutCont {
+  padding: 70px 0 10px;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  background-color: #252525;
+  background-blend-mode: soft-light;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.aboutSection1 {
+  background-color: #f4f4f4;
+  /* background-color: #000; */
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: #000;
+  padding: 50px 70px;
+  text-align: justify;
+}
+
+.aboutSection1 img {
+  max-width: 40rem;
+  max-height: 40rem;
+  border-radius: 5px;
+  /* object-fit: cover; */
+}
+
+.aboutSection1 > div > h1 {
+  color: #926009;
+}
+.aboutSection1 > div > p {
+  margin: 15px 0;
+}
+
+.people_image {
+  width: 200px;
+}
+
+.featureDiv {
+  overflow-y: scroll;
+  max-height: 230px;
+  cursor: grab;
+}
+
+.featureDiv:active {
+  cursor: grabbing;
+}
+
+.featureDiv::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* .featureDiv::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.featureDiv::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+
+.featureCaptions {
+  font-weight: 600;
+  color: brown;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.featureCaptions:hover {
+  color: #000;
+}
+
+.expandedCaptions {
+  background-color: #c0c0c0;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.featureDetails {
+  background-color: #dadada;
+  padding: 15px;
+  color: black;
+  margin: 3px 0;
+  border-radius: 6px;
+}
+
+.AboutSection2 {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  color: #282828;
+  padding: 20px 70px;
+  text-align: justify;
+}
+
+.AboutSection2 > div > h3 {
+  margin-bottom: 20px;
+  color: #a77e39;
+}
+
+hr {
+  border: 1px solid rgba(15, 15, 15, 0.267);
+  max-width: 50%;
+  margin: auto;
+}
+
+.peopleComponent {
+  background-color: #111111;
+  /* height: 100vh; */
+  /* fill-opacity: .1; */
+  /* background-color: #F1C36B; */
+  background-blend-mode: multiply;
+  background-image: url("https://images.unsplash.com/photo-1475965894430-b05c9d13568a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  border-radius: 20px 20px 0 0;
+}
+
+.PeopleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.PeopleContainer > div {
+  display: flex;
+  gap: 10px;
+  /* width: 50%; */
+  flex-wrap: row wrap;
+}
+
+.person_details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.person_details small {
+  color: #f4c26b;
+}
+
+.socialIcon {
+  /* width: 10px; */
+  margin-right: 5px;
+  color: #ffffff35;
+}
+
+.blogContainer h1 {
+  background-color: #000;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .aboutSection1 {
+    background-color: #f4f4f4;
+    /* background-color: #000; */
+    display: block;
+    color: #000;
+    padding: 30px 20px;
+  }
+
+  .aboutSection1 img {
+    display: none;
+  }
+
+  .aboutSection1 > div > h1 {
+    color: #926009;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .featureDiv {
+    overflow-y: visible;
+    max-height: fit-content;
+    cursor: pointer;
+  }
+
+  .featureDiv:active {
+    cursor: pointer;
+  }
+
+  .AboutSection2 {
+    display: block;
+    justify-content: center;
+    gap: 25px;
+    color: #282828;
+    padding: 0px 20px 40px;
+    text-align: justify;
+  }
+
+  .AboutSection2 > div > h3 {
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .PeopleContainer {
+    color: #d3d3d3;
+    display: block;
+    width: 80%;
+    padding: 30px 0;
+    margin: auto;
+  }
+
+  .PeopleContainer > div {
+    display: flex;
+    gap: 15px;
+    /* width: 50%; */
+    flex-wrap: row wrap;
+    margin-bottom: 25px;
+  }
+
+  .person_details {
+    display: block;
+  }
+
+  .person_details > h2 {
+    font-size: 22px;
+  }
+
+  .person_details > div {
+    margin-top: 10px;
+  }
+
+  .socialIcon {
+    /* width: 10px; */
+    margin-right: 5px;
+    color: #ffffff35;
+  }
+}
