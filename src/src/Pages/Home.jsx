@@ -7,6 +7,8 @@ import People from '../data/People'
 import Featuring from "../components/featuring";
 import Footer from "../components/Footer";
 import Events from "../components/Events";
+import Slider2 from "../components/Slider2";
+import PeopleSlides from "../components/PeopleSlides";
 // import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -23,7 +25,13 @@ const Home = () => {
 
   return (
     <div>
+      <div className="mobile_disable">
       <CitiesSlider />
+        
+      </div>
+      <div className="desktop_disable">
+      <Slider2 />
+      </div>
       <Featuring />
 
       <AboutCounter className="" />
@@ -59,6 +67,10 @@ const Home = () => {
             </div>
           ))}
         </div>
+
+        {/* slides 2 for mobile screen */}
+
+        <PeopleSlides />
       </div>
 
       <Events />
