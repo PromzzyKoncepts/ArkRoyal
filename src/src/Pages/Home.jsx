@@ -1,0 +1,70 @@
+import { useState } from "react";
+
+import "../../Stylesheets/Home.css";
+import AboutCounter from "../Hooks/Counter";
+import CitiesSlider from "../components/Slider";
+import People from '../data/People'
+import Featuring from "../components/featuring";
+import Footer from "../components/Footer";
+import Events from "../components/Events";
+// import { Link } from "react-router-dom";
+
+const Home = () => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleDivHover = () => {
+    setShowDetails(true);
+  };
+
+  const handleDivLeave = () => {
+    setShowDetails(false);
+  };
+
+
+  return (
+    <div>
+      <CitiesSlider />
+      <Featuring />
+
+      <AboutCounter className="" />
+
+      <div className="section_people" id="section_people">
+        <h1 id="meet_the_people">Meet The People</h1>
+        <p>
+          Meet the incredible members of Ark Royal – a tapestry
+          woven with diverse talents, boundless passion, and unwavering
+          dedication. Our community is a mosaic of professionals from various
+          fields, each contributing a unique hue to the canvas of positive
+          societal change.
+        </p>
+        <div className="swiper">
+          {People.map((person, index) => (
+            <div
+              key={index}
+              style={{ backgroundImage: `url(${person.picture})` }}
+              className={`swiper-item ${showDetails ? "details-shown" : ""}`}
+              onMouseEnter={handleDivHover}
+              onMouseLeave={handleDivLeave}
+            >
+              {showDetails && (
+                <div className="people-details">
+                  <h2 className="colored-text">{person.name}</h2>
+                  <small>{person.position}</small>
+                  <hr></hr>
+                  <br></br>
+                  <p>{person.company}</p>
+                  <small className="colored-text">{person.profession}</small>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Events />
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
