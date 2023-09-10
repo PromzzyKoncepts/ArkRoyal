@@ -22,7 +22,7 @@ const People = [
   {
     name: "Nnenanya Hillary Chukwuebuka ",
     profession: "Entrepreneur",
-    company: "G-max Premium Nig. Ltd & G-max premium table water",
+    company: "CEO: G-max Premium Nig. Ltd ",
     company2: "MD - Raco Moon Intl. Ltd",
     position: "Secretary - Ark Royal Club",
     picture: Hillary,
@@ -44,7 +44,7 @@ const People = [
   {
     name: "Duby-Odeh Ramsey",
     profession: "Businessman/Contractor",
-    company: "Managing Director Gazstrom Energy Ltd",
+    company: "MD - Gazstrom Energy Ltd",
     company2: "",
     position: "P.R.O Ark Royal Club",
     picture: ramzy,
@@ -55,7 +55,7 @@ const People = [
   {
     name: "AMB OZONWACHUKWU U.J",
     profession: "Realtor/Contractor ",
-    company: "C.E.O Jkings Properties Estate Consultant",
+    company: "CEO Jkings Properties",
     company2: "",
     position: "Top-Member Ark Royal Club",
     picture: jkings,
@@ -66,7 +66,7 @@ const People = [
   {
     name: "Ifeacho Chukwunonso Gerald",
     profession: "Businessman",
-    company: "CEO Nolson Konsept international",
+    company: "CEO Nolson Konsept Int'l",
     company2: "",
     position: "Top-Member Ark Royal Club",
     picture: nonso,
