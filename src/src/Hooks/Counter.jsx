@@ -21,25 +21,25 @@ const AboutCounter = () => {
 
       <div className="counter-container">
         <CounterItem
-          title="MEMBERS"
+          title="Members"
           counter={<span id="members" />}
           measurement="+"
         />
 
         <CounterItem
-          title="HOSPITALS VISITED"
+          title="Hospitals Visited"
           counter={<span id="githubStarsCounter" />}
           measurement="+"
         />
 
         <CounterItem
-          title="COMMUNITY OUTREACHES"
+          title="Community Outreaches"
           counter={<span id="feedbackCounter" />}
           measurement="+"
         />
 
         <CounterItem
-          title="CHARITY OUTREACHES"
+          title="Charity Outreaches"
           counter={<span id="projectsCounter" />}
           measurement="+"
         />
