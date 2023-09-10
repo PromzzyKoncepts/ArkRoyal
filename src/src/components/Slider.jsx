@@ -21,6 +21,7 @@ const CitiesSlider = () => {
       city: "Ark Royal",
       country: "Meet the People",
       img: Group,
+      link: '#section_people'
     },
     {
       city: "Giving Back to Communities",
@@ -47,7 +48,7 @@ const CitiesSlider = () => {
   // ipheco-ecommerce, taiwo-movie streaming, prosper-crypto/investment, IG-github clone eche-facebook clone, chidimma-user-data management/registry,  web app-online version of computer softwares
 
   const IMAGE_PARTS = 4;
-  const AUTOCHANGE_TIME = 8000;
+  const AUTOCHANGE_TIME = 7000;
 
   const [activeSlide, setActiveSlide] = useState(-1);
   const [prevSlide, setPrevSlide] = useState(-1);
@@ -106,7 +107,7 @@ const CitiesSlider = () => {
                   <span key={i}>{l}</span>
                 ))}
               </h2>
-              <p className="slider__slide-readmore">read more</p>
+              <a className="slider__slide-readmore" href={slide.link}>read more</a>
             </div>
             <div className="slider__slide-parts">
               {[...Array(IMAGE_PARTS).fill()].map((_, i) => (
