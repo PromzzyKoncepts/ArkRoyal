@@ -372,19 +372,37 @@ ul {
   list-style: none;
   gap: 30px;
 
-  a {
-      color: white;
-      text-decoration: none;
-      // transition: color 0.3s;
-      // font-weight: 400!important;
-      /* Add a transition for smooth color change */
-  
-      &:hover {
-        color: #F4C26B!important;
-        /* Change the color to red when hovered */
+  li {
+    
+    a {
+        color: rgb(147, 4, 4);
+        text-decoration: none;
+        // transition: color 0.3s;
+        // font-weight: 400!important;
+        /* Add a transition for smooth color change */
+    
+        &:hover {
+          color: #F4C26B!important;
+          /* Change the color to red when hovered */
+        }
       }
-    }
-}
+  }
+  }
+
+  .nav-link {
+    color: #f4f4f4!important;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px!important;
+    // font-weight: 500!important;
+  }
+
+  .nav-link.active {
+    // background-color: #F1C564;
+    font-weight: 700;
+    color: #F1C564!important;
+    // padding: 10px;
+  }
+
 
 .logo-image {
   width: 120px;

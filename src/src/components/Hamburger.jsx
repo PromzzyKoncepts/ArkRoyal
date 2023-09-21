@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Proptypes from "prop-types";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
 
 const StyledMenu = styled.nav`
@@ -13,7 +13,7 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   height: 100vh;
   text-align: left;
-  padding: 5rem 2rem;
+  padding: 7rem 2rem;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -25,8 +25,9 @@ const StyledMenu = styled.nav`
   }
 
   a {
+    font-family: 'Inter', sans-serif!important;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 0.8rem 10px;
     font-weight: 500;
     letter-spacing: 0.1rem;
     color: #fff;
@@ -36,32 +37,40 @@ const StyledMenu = styled.nav`
     @media (max-width: 768px) {
       font-size: 1rem;
       text-align: left;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #ffffff25;
     }
 
     &:hover {
       color: #f4c26b;
     }
+
+    &.active {
+      background-color: #f4c26b; /* Add this line to style the active NavLink */
+      color: #200000; /* Change the text color for the active NavLink */
+      // width: 30%;
+      font-weight: 700;
+      border-bottom: none;
+      border-radius:10px;
   }
 `;
 
 const Menu = ({ open, setOpen }) => (
   <StyledMenu open={open}>
-    <Link to="/" onClick={() => setOpen(false)}>
+    <NavLink to="/" onClick={() => setOpen(false)}>
       Home
-    </Link>
-    <Link to="/about" onClick={() => setOpen(false)}>
+    </NavLink>
+    <NavLink to="/about" onClick={() => setOpen(false)}>
       About Us
-    </Link>
+    </NavLink>
     <a href="/about#section_people" onClick={() => setOpen(false)}>
       Members
     </a>
-    <Link to="/projects" onClick={() => setOpen(false)}>
+    <NavLink to="/projects" onClick={() => setOpen(false)}>
       Projects
-    </Link>
-    <Link to="/blog" onClick={() => setOpen(false)}>
+    </NavLink>
+    <NavLink to="/blog" onClick={() => setOpen(false)}>
       Blogs
-    </Link>
+    </NavLink>
   </StyledMenu>
 );
 
