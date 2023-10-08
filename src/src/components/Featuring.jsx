@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import white from "../../assets/white.jpg";
 
 const Featuring = () => {
+
   return (
     <div>
       <div className="section2">
@@ -23,6 +24,7 @@ const Featuring = () => {
               goal: contributing our skills and expertise towards positive
               societal change. Together, we aim to create a supportive network
               that fosters collaboration, knowledge and meaningful connections.
+              <br />
               <br />
               As a club, we aspire to be at the forefront of positive change,
               leaving a lasting impact on communities and fostering a legacy of

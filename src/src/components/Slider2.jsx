@@ -1,4 +1,3 @@
-import {useState, useRef} from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Support from "../../assets/support2.jpg";

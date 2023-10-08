@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 
 
@@ -12,14 +11,14 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/" className="nav-link">
+                <NavLink to="/" className="nav-link">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" className="nav-link">
+                <NavLink to="/about" className="nav-link">
                   About Us
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <a href="#section_people" className="nav-link">
@@ -28,14 +27,14 @@ const Header = () => {
               </li>
               
               <li>
-                <Link to="/projects" className="nav-link">
+                <NavLink to="/projects" className="nav-link">
                   Projects
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/blog" className="nav-link">
+                <NavLink to="/blog" className="nav-link">
                   Blogs
-                </Link>
+                </NavLink>
               </li>
               
             </ul>
