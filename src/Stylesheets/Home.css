@@ -355,7 +355,7 @@ hr {
   }
 
   .description {
-    text-align: left;
+    text-align: justify;
   }
   .div-image {
     display: none;
