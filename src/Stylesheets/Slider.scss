@@ -14,7 +14,7 @@ body {
 $numOfParts: 4;
 $animTime: 1s;
 $stagger: 0.08s;
-$sliderReadyTrans: all $animTime/2 $animTime;
+$sliderReadyTrans: all calc($animTime / 2) $animTime;
 $maxLettersStagger: 6;
 $letterStagger: 0.1s;
 
@@ -92,7 +92,7 @@ $letterStagger: 0.1s;
     
     @mixin subTextsActiveSlide {
       opacity: 0;
-      transition: $animTime/2;
+      transition: calc($animTime / 2);
       
       @include slideActive {
         transition-delay: $animTime*0.65;
@@ -127,7 +127,7 @@ $letterStagger: 0.1s;
         display: block;
         opacity: 0;
         transform: translateY($fontSize*-1);
-        transition: all $animTime/3;
+        transition: all calc($animTime / 3);
         
         @include slidePrev {
           transform: translateY($fontSize)
@@ -145,7 +145,7 @@ $letterStagger: 0.1s;
             transition-delay: $delay;
             
             @include slideActive {
-              transition-delay: $delay + $animTime/3;
+              transition-delay: $delay + calc($animTime / 3);
             }
           }
         }
@@ -156,7 +156,7 @@ $letterStagger: 0.1s;
           transition-delay: $delay;
           
           @include slideActive {
-            transition-delay: $delay + $animTime/3;
+            transition-delay: $delay + calc($animTime / 3);
           }
         }
       }
@@ -212,14 +212,14 @@ $letterStagger: 0.1s;
     }
 
     &-part {
-      $partW: (100vw / $numOfParts);
+      $partW: calc(100vw / $numOfParts);
       
       position: relative;
-      width: percentage(1 / $numOfParts);
+      width: percentage(calc(1 / $numOfParts));
       height: 100%;
       
       $partRef: &;
-      $imageFadeAT: $animTime/4;
+      $imageFadeAT: calc($animTime / 4);
 
       &-inner {
         overflow: hidden;
@@ -229,7 +229,7 @@ $letterStagger: 0.1s;
         background-size: 0 0;
         // background-position: contain;
         background-repeat: no-repeat;
-        transition: transform $animTime/2 ease-in-out;
+        transition: transform calc($animTime / 2) ease-in-out;
 
         &:before {
           content: '';
@@ -248,11 +248,11 @@ $letterStagger: 0.1s;
         @for $i from 1 through $numOfParts {
           #{$partRef}:nth-child(#{$i}) & {
             $delayOut: ($numOfParts - $i) * $stagger;
-            $delayIn: $i * $stagger + $animTime/5;
+            $delayIn: calc($i * $stagger + $animTime/5);
             
             z-index: $numOfParts - $i;
             transition-delay: $delayOut;
-            transform: translateX(percentage($i / $numOfParts * -1.3));
+            transform: translateX(percentage(calc($i / $numOfParts * -1.3)));
             
             @include slideActive {
               transition-delay: $delayIn;
@@ -260,7 +260,7 @@ $letterStagger: 0.1s;
 
             &:before {
               left: $partW * ($i - 1) * -1;
-              transition-delay: $delayOut + $imageFadeAT/2;
+              transition-delay: $delayOut + calc($imageFadeAT / 2);
               
               @include slideActive {
                 transition-delay: $delayIn;
@@ -290,7 +290,7 @@ $letterStagger: 0.1s;
     top: 50%;
     width: $size;
     height: $size;
-    margin-top: $size/-2;
+    margin-top: calc($size / -2);
     border-radius: 50%;
     background: rgba(255,255,255,0.4);
     transform: translateX($size*-1);
@@ -373,7 +373,7 @@ ul {
   gap: 30px;
 
   a {
-      color: white;
+      color: white!important;
       text-decoration: none;
       // transition: color 0.3s;
       // font-weight: 400!important;

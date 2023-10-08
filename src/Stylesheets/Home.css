@@ -10,7 +10,8 @@
 }
 
 .whatwedo {
-  padding: 40px 60px 20px;
+  font-family: "Inter", serif;
+  padding: 60px 10%;
 }
 
 .whatwedo > h2 {
@@ -260,6 +261,7 @@ hr {
 }
 
 .footer {
+  color: #fff;
   /* background-color: #666666; */
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -283,11 +285,11 @@ hr {
 
 .rightsReserved {
   text-align: center;
+  color: #838383;
 }
 
-.rightsReserved small,
+.rightsReserved>small,
 .rightsReserved a {
-  color: #838383;
   text-decoration: none;
   font-size: 0.7rem;
 }

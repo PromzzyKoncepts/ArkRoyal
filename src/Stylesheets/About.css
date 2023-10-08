@@ -127,13 +127,14 @@ hr {
   width: 90%;
   padding: 50px 0;
   margin: auto;
+  color: #c0c0c0;
 }
 
 .PeopleContainer > div {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   /* width: 50%; */
-  flex-wrap: row wrap;
+  /* flex-wrap: row wrap; */
 }
 
 .person_details {
