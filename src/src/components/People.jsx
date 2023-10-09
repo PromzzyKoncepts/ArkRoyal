@@ -16,7 +16,7 @@ function People() {
               />
             </div>
             <div className="person_details">
-              <h2>{person.name}</h2>
+              <h3>{person.name}</h3>
               <small>{person.position}</small>
               <p>{person.company}</p>
               <small>{person.profession}</small>

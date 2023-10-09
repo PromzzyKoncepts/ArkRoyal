@@ -71,14 +71,14 @@
 }
 
 .featureCaptions:hover {
-  color: #000;
+  color: #282828;
 }
 
 .expandedCaptions {
   background-color: #c0c0c0;
   gap: 8px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 5px 0;
   border-radius: 6px;
 }
@@ -86,9 +86,10 @@
 .featureDetails {
   background-color: #dadada;
   padding: 15px;
-  color: black;
+  color: #282828;
   margin: 3px 0;
   border-radius: 6px;
+  font-weight: 400;
 }
 
 .AboutSection2 {

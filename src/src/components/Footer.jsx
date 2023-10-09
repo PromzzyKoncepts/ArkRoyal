@@ -61,7 +61,7 @@ const Footer = () => {
               </FormLabel>
               <Input
                 sx={{ "--Input-decoratorChildHeight": "45px" }}
-                placeholder="mail@mui.com"
+                placeholder="example@gmail.com"
                 type="email"
                 required
                 value={data.email}
