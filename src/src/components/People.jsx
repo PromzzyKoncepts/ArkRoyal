@@ -5,6 +5,7 @@ import Persons from "../data/People";
 function People() {
   return (
     <div className="peopleComponent">
+      <h1 className="members">Our Members</h1>
       <div className="PeopleContainer">
         {Persons.map((person, index) => (
           <div key={index}>
