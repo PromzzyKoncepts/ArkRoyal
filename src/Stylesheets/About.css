@@ -140,8 +140,6 @@ hr {
 .PeopleContainer > div {
   display: flex;
   gap: 20px;
-  /* width: 50%; */
-  /* flex-wrap: row wrap; */
 }
 
 .person_details {
