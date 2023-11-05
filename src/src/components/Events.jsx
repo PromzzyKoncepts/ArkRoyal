@@ -36,9 +36,11 @@ const Events = () => {
 
   return (
     <div className="events" id="events">
-      <h1>RECENT PROJECTS/EVENTS</h1>
-      <p>Check back on our recently and previously concluded projects and events.</p>
-      <div>
+      <h1 data-aos="fade-down">RECENT PROJECTS</h1>
+      <p>
+        Check back on our recently and previously concluded projects and events.
+      </p>
+      <div data-aos="fade-left">
         {eventDetails.map((event, index) => (
           <div
             key={index}
@@ -47,8 +49,12 @@ const Events = () => {
           >
             <div>
               <h3>{event.title}</h3>
-              <p><EventIcon /> {event.date}</p>
-              <p><LocationOn/> {event.location}</p>
+              <p>
+                <EventIcon /> {event.date}
+              </p>
+              <p>
+                <LocationOn /> {event.location}
+              </p>
               {/* <button>See More</button> */}
             </div>
           </div>

@@ -41,7 +41,7 @@ const Slider2 = () => {
   ];
 
   return (
-    <div className="">
+    <div data-aos="fade-down" className="">
       {/* <div ref={node} className="hamburger">
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

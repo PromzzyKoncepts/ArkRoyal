@@ -13,13 +13,13 @@ const AboutCounter = () => {
   useCountUp({ ref: "projectsCounter", end: 50, duration: 5 });
 
   return (
-    <div className="counter">
+    <div data-aos="fade-up" className="counter">
       <h1>
         We have transformed over <span className="span">1000 lives</span> all
         over the Country
       </h1>
 
-      <div className="counter-container">
+      <div data-aos="fade-right" className="counter-container">
         <CounterItem
           title="Members"
           counter={<span id="members" />}
@@ -44,13 +44,12 @@ const AboutCounter = () => {
           measurement="+"
         />
       </div>
-      <div className="features">
+      <div data-aos="fade-up" className="features">
         {Features.map((feature, index) => (
           <div key={index}>
             {feature.icon}
-            <h5>{ feature.title}</h5>
+            <h5>{feature.title}</h5>
           </div>
-          
         ))}
       </div>
     </div>

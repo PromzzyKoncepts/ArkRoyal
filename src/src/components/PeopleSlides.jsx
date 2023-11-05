@@ -17,7 +17,7 @@ function PeopleSlides() {
 
   return (
     <div className="PeopleCont">
-      <div className="content">
+      <div data-aos="fade-right" className="content">
         <div className="container">
           <Slider {...settings}>
             {People.map((item, index) => (

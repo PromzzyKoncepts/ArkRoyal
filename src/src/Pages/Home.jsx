@@ -36,13 +36,15 @@ const Home = () => {
 
       <div className="section_people" id="section_people">
         <h1 id="meet_the_people">Meet The People</h1>
-        <p>
+        <p data-aos="fade-up">
           Meet the incredible members of Ark Royal – a tapestry woven with
           diverse talents, boundless passion, and unwavering dedication. Our
           community is a mosaic of professionals from various fields, each
           contributing a unique hue to the canvas of positive societal change.
         </p>
-        <div className="swiper">
+        <div
+          data-aos="fade-up"
+          className="swiper">
           {People.map((person, index) => (
             <div
               key={index}
