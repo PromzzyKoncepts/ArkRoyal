@@ -40,7 +40,7 @@ const Events = () => {
       <p>
         Check back on our recently and previously concluded projects and events.
       </p>
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         {eventDetails.map((event, index) => (
           <div
             key={index}
