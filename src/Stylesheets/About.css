@@ -34,10 +34,6 @@
   margin: 15px 0;
 }
 
-.people_image {
-  width: 200px;
-}
-
 .featureDiv {
   overflow-y: scroll;
   max-height: 230px;
@@ -118,14 +114,34 @@ hr {
   /* height: 100vh; */
   /* fill-opacity: .1; */
   /* background-color: #F1C36B; */
-  background-blend-mode: multiply;
-  background-image: url("https://images.unsplash.com/photo-1475965894430-b05c9d13568a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  /* background-blend-mode: multiply; */
+  /* background-image: url("https://images.unsplash.com/photo-1475965894430-b05c9d13568a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"); */
   border-radius: 20px 20px 0 0;
 }
 
-.members{
+.members {
   text-align: center;
   padding: 50px 0 0;
+}
+
+/* .PeopleContainer {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  padding: 50px 0;
+  margin: auto;
+  color: #c0c0c0;
+} */
+
+.people_image {
+  /* flex-basis: 200px; */
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
 }
 
 .PeopleContainer {
@@ -135,6 +151,7 @@ hr {
   padding: 50px 0;
   margin: auto;
   color: #c0c0c0;
+  gap: 30px;
 }
 
 .PeopleContainer > div {
@@ -223,6 +240,7 @@ hr {
     width: 80%;
     padding: 30px 0;
     margin: auto;
+    gap: 40px;
   }
 
   .PeopleContainer > div {

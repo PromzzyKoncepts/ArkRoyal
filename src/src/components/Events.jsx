@@ -20,14 +20,14 @@ const Events = () => {
     {
       title: "Hospital Outreach",
       image:
-        "https://images.unsplash.com/photo-1597762117709-859f744b84c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "https://www.rcsi.com/dublin/-/media/feature/news/dublin/stock-images/surgery-in-africa.jpg",
       date: "Sept 04, 2020",
       location: "ESUT Teaching Hospital, Parklane Enugu State",
     },
     {
       title: "Orthopaedic Visitation",
       image:
-        "https://media.istockphoto.com/id/1130184734/photo/portrait-of-farm-children.jpg?s=612x612&w=0&k=20&c=yDKGL6_cHnJjf3YLCeEyxoDihmd7xK-wbcFMpdrEPtk=",
+        "https://newvision-media.s3.amazonaws.com/cms/6cf11739-11a4-4791-a5fe-2e525a558b27.jpg",
       date: "January 04, 2021",
       location: "Orthopaedic Hospital Enugu",
     },
@@ -49,7 +49,7 @@ const Events = () => {
               <h3>{event.title}</h3>
               <p><EventIcon /> {event.date}</p>
               <p><LocationOn/> {event.location}</p>
-              <button>See More</button>
+              {/* <button>See More</button> */}
             </div>
           </div>
         ))}

@@ -116,12 +116,12 @@ hr {
 
 .section_people {
   padding: 60px 40px;
-  background-color: #111111;
-  height: 100vh;
+  background-color: #270000;
+  height: 80vh;
   /* fill-opacity: .1; */
   /* background-color: #F1C36B; */
-  background-blend-mode: multiply;
-  background-image: url("https://images.unsplash.com/photo-1475965894430-b05c9d13568a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  /* background-blend-mode: multiply; */
+  /* background-image: url("https://images.unsplash.com/photo-1475965894430-b05c9d13568a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"); */
   color: #e6ad3d;
 }
 
@@ -187,7 +187,7 @@ hr {
 
 /* events component */
 .events {
-  background-color: #fff;
+  background-color: #dadada;
   color: #111111;
 }
 .events h1 {

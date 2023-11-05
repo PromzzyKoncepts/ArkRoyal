@@ -72,9 +72,9 @@ const About = () => {
         </div>
       </div>
       <div id="section_people">
-
       <People />
       </div>
+      
       <Footer />
     </div>
   );

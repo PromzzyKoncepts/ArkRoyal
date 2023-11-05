@@ -5,7 +5,7 @@ import logo from "../../assets/logo.jpg";
 const Header = () => {
   return (
     <div>
-      <header className="header">
+      <header data-aos="fade-down" className="header">
         <div className="header-div">
           <img src={logo} className="logo-image" />
           <nav>
@@ -25,7 +25,7 @@ const Header = () => {
                   Our Members
                 </a>
               </li>
-              
+
               <li>
                 <NavLink to="/projects" className="nav-link">
                   Projects
@@ -36,7 +36,6 @@ const Header = () => {
                   Blogs
                 </NavLink>
               </li>
-              
             </ul>
           </nav>
         </div>

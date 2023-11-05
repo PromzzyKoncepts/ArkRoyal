@@ -21,7 +21,7 @@ function People() {
               <small>{person.position}</small>
               <p>{person.company}</p>
               <small>{person.profession}</small>
-              <div>
+              {/* <div>
                 <SocialIcon
                   className="socialIcon"
                   fontSize="small"
@@ -40,7 +40,7 @@ function People() {
                   fontSize="small"
                   url={person.linkedIn}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

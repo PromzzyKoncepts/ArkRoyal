@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../../Stylesheets/Home.css";
 import AboutCounter from "../Hooks/Counter";
 import CitiesSlider from "../components/Slider";
-import People from '../data/People'
+import People from "../data/People";
 import Featuring from "../components/Featuring";
 import Footer from "../components/Footer";
 import Events from "../components/Events";
@@ -22,15 +22,13 @@ const Home = () => {
     setShowDetails(false);
   };
 
-
   return (
     <div>
       <div className="mobile_disable">
-      <CitiesSlider />
-        
+        <CitiesSlider />
       </div>
       <div className="desktop_disable">
-      <Slider2 />
+        <Slider2 />
       </div>
       <Featuring />
 
@@ -39,11 +37,10 @@ const Home = () => {
       <div className="section_people" id="section_people">
         <h1 id="meet_the_people">Meet The People</h1>
         <p>
-          Meet the incredible members of Ark Royal – a tapestry
-          woven with diverse talents, boundless passion, and unwavering
-          dedication. Our community is a mosaic of professionals from various
-          fields, each contributing a unique hue to the canvas of positive
-          societal change.
+          Meet the incredible members of Ark Royal – a tapestry woven with
+          diverse talents, boundless passion, and unwavering dedication. Our
+          community is a mosaic of professionals from various fields, each
+          contributing a unique hue to the canvas of positive societal change.
         </p>
         <div className="swiper">
           {People.map((person, index) => (
