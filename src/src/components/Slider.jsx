@@ -98,7 +98,7 @@ const CitiesSlider = () => {
             key={slide.city}
           >
             <Header />
-            <div className="slider__slide-content">
+            <div data-aos="fade-up" className="slider__slide-content">
               <h3 className="slider__slide-subheading">
                 {slide.country || slide.city}
               </h3>
@@ -107,7 +107,9 @@ const CitiesSlider = () => {
                   <span key={i}>{l}</span>
                 ))}
               </h2>
-              <a className="slider__slide-readmore" href={slide.link}>read more</a>
+              <a className="slider__slide-readmore" href={slide.link}>
+                read more
+              </a>
             </div>
             <div className="slider__slide-parts">
               {[...Array(IMAGE_PARTS).fill()].map((_, i) => (

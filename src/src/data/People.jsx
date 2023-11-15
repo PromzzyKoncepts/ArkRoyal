@@ -3,7 +3,7 @@ import ramzy from "../../assets/ramzy.jpg";
 import pascal from "../../assets/pascal.jpg";
 import charles from "../../assets/charles.jpg";
 import Hillary from "../../assets/Hillary.jpg";
-import ifeanyi from "../../assets/ifeanyi.jpg";
+import ifeanyi from "../../assets/okigwe.jpg";
 import jkings from "../../assets/Jkings.jpg";
 
 
@@ -14,10 +14,9 @@ const People = [
     company: "CEO, Puzzle Classic Clothing",
     position: "Chairman, ArkRoyal Club",
     picture: pascal,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
-
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "Nnenanya Hillary Chukwuebuka ",
@@ -26,9 +25,9 @@ const People = [
     company2: "MD - Raco Moon Intl. Ltd",
     position: "Secretary - Ark Royal Club",
     picture: Hillary,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "Charles C. Egumgbe, Esq",
@@ -37,9 +36,9 @@ const People = [
     company2: "MD - Raco Moon Intl. Ltd",
     position: "Financial Secretary - Ark Royal Club",
     picture: charles,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "Duby-Odeh Ramsey",
@@ -48,42 +47,42 @@ const People = [
     company2: "",
     position: "P.R.O Ark Royal Club",
     picture: ramzy,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "AMB OZONWACHUKWU U.J",
     profession: "Realtor/Contractor ",
     company: "CEO Jkings Properties",
     company2: "",
-    position: "Member Ark Royal Club",
+    position: "Member, Ark Royal Club",
     picture: jkings,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "Ifeacho Chukwunonso Gerald",
     profession: "Businessman",
     company: "CEO Nolson Konsept Int'l",
     company2: "",
-    position: "Member Ark Royal Club",
+    position: "Member, Ark Royal Club",
     picture: nonso,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
   {
     name: "Okigwe Ifeanyi Vitalis",
     profession: "Foreign Exchange Broker",
-    company: "C.E.O ",
+    company: "C.E.O Anyi natur BDC ",
     company2: "",
-    position: "Member Ark Royal Club",
+    position: "Member, Ark Royal Club",
     picture: ifeanyi,
-    fbUrl: 'https://facebook.com',
-    IGUrl: 'https://instagram.com',
-    linkedIn: 'https://linkedin.com'
+    fbUrl: "https://facebook.com",
+    IGUrl: "https://instagram.com",
+    linkedIn: "https://linkedin.com",
   },
 ];
 

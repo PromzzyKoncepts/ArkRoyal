@@ -105,20 +105,30 @@ const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
 
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-      background-color: #333;
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
   }
+  .first-child {
+    transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+  }
+
+  .second-child {
+    opacity: ${({ open }) => (open ? "0" : "1")};
+    transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+  }
+
+  .third-child {
+    transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+  }
+`;
+
+const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #20000090;
+  z-index: 2;
+  display: ${({ open }) => (open ? "block" : "none")};
 `;
 
 const Burger = ({ open, setOpen }) => (
@@ -127,14 +137,14 @@ const Burger = ({ open, setOpen }) => (
       <img src={logo} alt="" className="logo-image" />
     </div>
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
+      <div className="first-child" />
+      <div className="second-child" />
+      <div className="third-child" />
     </StyledBurger>
   </div>
 );
 
-export { Burger, Menu };
+export { Burger, Menu, Overlay };
 Burger.propTypes = {
   open: Proptypes.bool.isRequired,
   setOpen: Proptypes.func.isRequired,

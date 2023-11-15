@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import FormControl from "@mui/joy/FormControl";
 import FormLabel from "@mui/joy/FormLabel";
 import FormHelperText from "@mui/joy/FormHelperText";
@@ -39,10 +39,18 @@ const Footer = () => {
 
           <div>
             <h5>Follow us on:</h5>
-            <SocialIcon url="tel:+234 1234 567 890" bgColor="#666666" />
-            <SocialIcon url="https://twitter.com/jaketrent" bgColor="#666666" />
-            <SocialIcon url="https://facebook.com" bgColor="#666666" />
-            <SocialIcon url="https://instagram.com" bgColor="#666666" />
+            <SocialIcon
+              url="https://twitter.com/arkroyal_club"
+              bgColor="#666666"
+            />
+            <SocialIcon
+              url="https://facebook.com/arkroyal_club/"
+              bgColor="#666666"
+            />
+            <SocialIcon
+              url="https://www.instagram.com/arkroyal_club/"
+              bgColor="#666666"
+            />
             <SocialIcon
               url="https://mailto:okechukwupromise638@gmail.com"
               bgColor="#666666"
@@ -61,7 +69,7 @@ const Footer = () => {
               </FormLabel>
               <Input
                 sx={{ "--Input-decoratorChildHeight": "45px" }}
-                placeholder="mail@mui.com"
+                placeholder="example@gmail.com"
                 type="email"
                 required
                 value={data.email}
@@ -104,17 +112,18 @@ const Footer = () => {
           <div className="categories">
             <div>
               <h3>About</h3>
+              <a href="#">About Ark Royal</a>
+              <br></br>
               <a href="#">What We Do</a>
               <br></br>
-              <a href="#">Mission</a>
+              <a href="#">Mission & Vision</a>
               <br></br>
-              <a href="#">Vision</a>
             </div>
             <div>
               <h3>Explore</h3>
               <a href="#">Upcoming Events</a>
               <br></br>
-              <a href="#">The People</a>
+              <a href="#section_people">The People</a>
               <br></br>
               <a href="#">Past Projects</a>
               <br></br>

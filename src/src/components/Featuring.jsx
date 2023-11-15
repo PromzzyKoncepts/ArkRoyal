@@ -12,18 +12,18 @@ const Featuring = () => {
   return (
     <div>
       <div className="section2">
-        <div className="whatwedo">
+        <div data-aos="fade-right" className="whatwedo">
           <div>
             <h1>Creating Moments, Fostering Friendships</h1>
             <p className="description">
               <span>Welcome to Ark Royal Club</span> - Where every experience is
               a chapter in your story!
               <br />
-              We are a passionate community of
-              like-minded professionals from various fields who share a common
-              goal: contributing our skills and expertise towards positive
-              societal change. Together, we aim to create a supportive network
-              that fosters collaboration, knowledge and meaningful connections.
+              We are a passionate community of like-minded professionals from
+              various fields who share a common goal: contributing our skills
+              and expertise towards positive societal change. Together, we aim
+              to create a supportive network that fosters collaboration,
+              knowledge and meaningful connections.
               <br />
               <br />
               As a club, we aspire to be at the forefront of positive change,
@@ -36,13 +36,14 @@ const Featuring = () => {
               Join us on this incredible journey as we work hand in hand to
               build a society that thrives on unity, empathy, and progress.
             </p>
-            <Link to='/about' className="about_link">About Us</Link>
+            <Link to="/about" className="about_link">
+              About Us
+            </Link>
           </div>
           <br />
           <br />
-          
         </div>
-        <div>
+        <div data-aos="fade-left">
           <img src={white} className="div-image" />
         </div>
       </div>

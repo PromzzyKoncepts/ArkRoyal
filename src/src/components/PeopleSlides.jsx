@@ -16,7 +16,7 @@ function PeopleSlides() {
   };
 
   return (
-    <div className="PeopleCont">
+    <div data-aos="fade-up" className="PeopleCont">
       <div className="content">
         <div className="container">
           <Slider {...settings}>

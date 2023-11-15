@@ -5,6 +5,7 @@ import Persons from "../data/People";
 function People() {
   return (
     <div className="peopleComponent">
+      <h1 className="members">Our Members</h1>
       <div className="PeopleContainer">
         {Persons.map((person, index) => (
           <div key={index}>
@@ -16,11 +17,11 @@ function People() {
               />
             </div>
             <div className="person_details">
-              <h2>{person.name}</h2>
+              <h3>{person.name}</h3>
               <small>{person.position}</small>
               <p>{person.company}</p>
               <small>{person.profession}</small>
-              <div>
+              {/* <div>
                 <SocialIcon
                   className="socialIcon"
                   fontSize="small"
@@ -39,7 +40,7 @@ function People() {
                   fontSize="small"
                   url={person.linkedIn}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

@@ -22,13 +22,15 @@ const AboutSection1 = () => {
         <div>
           <h1>Affecting Lives for many years</h1>
           <strong>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, neque!
+            Our dedication to continuously touch lives of people around us
           </strong>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repellendus nobis cumque reiciendis unde ut debitis, voluptatem quis
-            eaque aspernatur dolorem. Fugit impedit asperiores repellendus
-            soluta quos eos nobis, labore voluptas in doloribus.
+            Through the passage of time, we come to realize that life is a
+            complex interplay of actions and reactions, each with the potential
+            to affect lives for many years. Whether through inspiration,
+            support, or the lessons learnt, our actions can be the catalysts
+            that shape the narratives of countless souls, leaving an enduring
+            legacy that transcends the boundaries of time.
           </p>
           <div>
             <h4>Our Goals</h4>
@@ -46,7 +48,6 @@ const AboutSection1 = () => {
                           {feature.title}
                         </p>
                       </div>
-                      {/* Add your expanded details here */}
                       <p className="featureDetails">{feature.details}</p>
                     </div>
                   ) : (
