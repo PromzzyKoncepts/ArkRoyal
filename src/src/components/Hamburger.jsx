@@ -68,9 +68,7 @@ const Menu = ({ open, setOpen }) => (
     <NavLink to="/projects" onClick={() => setOpen(false)}>
       Projects
     </NavLink>
-    <NavLink to="/blog" onClick={() => setOpen(false)}>
-      Blogs
-    </NavLink>
+    
   </StyledMenu>
 );
 

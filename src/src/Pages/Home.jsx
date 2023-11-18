@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 
 import "../../Stylesheets/Home.css";
@@ -11,6 +12,7 @@ import Slider2 from "../components/Slider2";
 import PeopleSlides from "../components/PeopleSlides";
 // import { Link } from "react-router-dom";
 
+
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -23,7 +25,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div>      
       <div className="mobile_disable">
         <CitiesSlider />
       </div>
@@ -42,9 +44,7 @@ const Home = () => {
           community is a mosaic of professionals from various fields, each
           contributing a unique hue to the canvas of positive societal change.
         </p>
-        <div
-          data-aos="fade-up"
-          className="swiper">
+        <div data-aos="fade-up" className="swiper">
           {People.map((person, index) => (
             <div
               key={index}

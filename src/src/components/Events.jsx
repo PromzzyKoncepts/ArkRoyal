@@ -1,33 +1,34 @@
 import EventIcon from '@mui/icons-material/Event';
 import { LocationOn } from "@mui/icons-material";
 import school from '../../assets/school.jpg'
-import outreach from '../../assets/outreach.jpg'
+import outreach from '../../assets/outreach.jpg';
+import billsCleared from "../../assets/projects/billsCleared.jpg";
+import menWalking from "../../assets/projects/hospitalVisit.jpg";
+
 
 const Events = () => {
   const eventDetails = [
     {
       title: "Community Outreach",
       image: outreach,
-      date: "March 04, 2024",
-      location: "High St, London E15 2JG, United Kingdom",
+      date: "Jan 03 2022",
+      location: "Oji River, Ezeagu LGAs",
     },
     {
       title: "School Renovation",
       image: school,
-      date: "Dec 04, 2023",
+      date: "may 27th, 2022",
       location: "New Haven Primary School, Enugu State",
     },
     {
       title: "Hospital Outreach",
-      image:
-        "https://www.rcsi.com/dublin/-/media/feature/news/dublin/stock-images/surgery-in-africa.jpg",
-      date: "Sept 04, 2020",
+      image: menWalking,
+      date: "Sept 04, 2022",
       location: "ESUT Teaching Hospital, Parklane Enugu State",
     },
     {
       title: "Orthopaedic Visitation",
-      image:
-        "https://newvision-media.s3.amazonaws.com/cms/6cf11739-11a4-4791-a5fe-2e525a558b27.jpg",
+      image: billsCleared,
       date: "January 04, 2021",
       location: "Orthopaedic Hospital Enugu",
     },

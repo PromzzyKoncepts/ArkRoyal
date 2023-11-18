@@ -2,8 +2,8 @@ import nonso from "../../assets/nonso.jpg";
 import ramzy from "../../assets/ramzy.jpg";
 import pascal from "../../assets/pascal.jpg";
 import charles from "../../assets/charles.jpg";
-import Hillary from "../../assets/Hillary.jpg";
-import ifeanyi from "../../assets/okigwe.jpg";
+import Hillary from "../../assets/okigwe.jpg";
+import ifeanyi from "../../assets/ifeanyi.jpg";
 import jkings from "../../assets/Jkings.jpg";
 
 
