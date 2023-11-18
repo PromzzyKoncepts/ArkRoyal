@@ -31,11 +31,7 @@ const Header = () => {
                   Projects
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/blog" className="nav-link">
-                  Blogs
-                </NavLink>
-              </li>
+              
             </ul>
           </nav>
         </div>
