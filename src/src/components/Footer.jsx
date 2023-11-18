@@ -51,10 +51,7 @@ const Footer = () => {
               url="https://www.instagram.com/arkroyal_club/"
               bgColor="#666666"
             />
-            <SocialIcon
-              url="https://mailto:okechukwupromise638@gmail.com"
-              bgColor="#666666"
-            />
+            
           </div>
         </div>
         <div className="newsletter">
