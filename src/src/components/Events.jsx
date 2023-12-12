@@ -30,7 +30,7 @@ const Events = () => {
       title: "Orthopaedic Visitation",
       image: billsCleared,
       date: "May 27, 2023",
-      location: "Orthopaedic Hospital Enugu",
+      location: "National Orthopaedic Hospital Enugu",
     },
   ];
 
