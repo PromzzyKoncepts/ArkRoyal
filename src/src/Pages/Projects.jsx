@@ -25,7 +25,7 @@ const Projects = () => {
 
     {
       image: community,
-      date: "11th Dec",
+      date: "11th Dec 2021",
       location: "Iwollo Ezeagu LGA, Enugu",
       title: "Community Visit",
     },
@@ -37,13 +37,13 @@ const Projects = () => {
     },
     {
       image: renovation,
-      date: "11th Dec",
+      date: "30th July 2021",
       location: "New Haven Primary School, Enugu",
       title: "School Building Renovation",
     },
     {
       image: sickChild,
-      date: "27th May",
+      date: "27th May 2021",
       location: "ESUT Teaching Hospital, Parklane, Enugu State",
       title: "Children's Day",
     },
@@ -74,7 +74,7 @@ const Projects = () => {
         {data.map((project, index) => (
           <div key={index} className="project-item">
             <img src={project.image} className="img" alt="projects" />
-            <h6 className="project_date">{project.date}</h6>
+            <p className="project_date">{project.date}</p>
             <div className="project_icons">
               <AdsClickIcon fontSize="small" />
             </div>
