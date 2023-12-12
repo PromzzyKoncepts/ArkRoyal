@@ -2,7 +2,7 @@
 import "../../Stylesheets/About.css";
 import Header from "../components/Header";
 import award from "../../assets/projects/award.jpg";
-import sickChild from "../../assets/projects/sickChild.jpg";
+import billsCleared from "../../assets/projects/billsCleared.jpg";
 import community from "../../assets/projects/community.jpg";
 import schoolVisit from "../../assets/projects/schoolVisit.jpg";
 import hospitalVisit from "../../assets/projects/hospitalVisit.jpg";
@@ -18,38 +18,38 @@ const Projects = () => {
   const data = [
     {
       image: award,
-      date: "27th May",
+      date: "27th May 2021",
       location: "ESUT Teaching Hospital, Parklane, Enugu State",
       title: "Children's Day",
     },
 
     {
       image: community,
-      date: "11th Dec",
+      date: "3rd Jan 2022",
       location: "Iwollo Ezeagu LGA, Enugu",
       title: "Community Visit",
     },
     {
       image: schoolVisit,
-      date: "27th May",
+      date: "30th July 2021",
       location: "New Haven Primary School, New Haven, Enugu State",
-      title: "School Visitation",
+      title: "School Outreach",
     },
     {
       image: renovation,
-      date: "11th Dec",
+      date: "30th July 2021",
       location: "New Haven Primary School, Enugu",
       title: "School Building Renovation",
     },
     {
-      image: sickChild,
-      date: "27th May",
-      location: "ESUT Teaching Hospital, Parklane, Enugu State",
-      title: "Children's Day",
+      image: billsCleared,
+      date: "27th May 2023",
+      location: "National Orthopaedic Hospital, Enugu State",
+      title: "Orthopaedic Hospital Visit",
     },
     {
       image: hospitalVisit,
-      date: "11th Dec",
+      date: "27th May 2021",
       location: "ESUT Teaching Hospital, Parklane, Enugu State",
       title: "Hospital Visitation",
     },
@@ -74,7 +74,7 @@ const Projects = () => {
         {data.map((project, index) => (
           <div key={index} className="project-item">
             <img src={project.image} className="img" alt="projects" />
-            <h6 className="project_date">{project.date}</h6>
+            <p className="project_date">{project.date}</p>
             <div className="project_icons">
               <AdsClickIcon fontSize="small" />
             </div>

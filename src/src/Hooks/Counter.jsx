@@ -7,7 +7,7 @@ import Features from "../data/FeaturesData";
 
 const AboutCounter = () => {
   useCountUp({ ref: "experienceCounter", end: 500, duration: 5 });
-  useCountUp({ ref: "members", end: 50, duration: 5 });
+  useCountUp({ ref: "members", end: 7, duration: 5 });
   useCountUp({ ref: "githubStarsCounter", end: 100, duration: 5 });
   useCountUp({ ref: "feedbackCounter", end: 92, duration: 5 });
   useCountUp({ ref: "projectsCounter", end: 50, duration: 5 });

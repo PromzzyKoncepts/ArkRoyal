@@ -117,7 +117,7 @@ hr {
 .section_people {
   padding: 60px 40px;
   background-color: #270000;
-  height: 80vh;
+  /* height: 90vh; */
   /* fill-opacity: .1; */
   /* background-color: #F1C36B; */
   /* background-blend-mode: multiply; */
@@ -168,7 +168,7 @@ hr {
 }
 
 .people-details {
-  padding: 20px 15px;
+  padding: 10px 15px;
   width: 45%;
   display: none;
   flex: 1;
@@ -179,6 +179,7 @@ hr {
 
 .colored-text {
   color: #f4c26b;
+  font-weight: 700;
 }
 
 .swiper-item:hover .people-details {
