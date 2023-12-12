@@ -3,7 +3,7 @@ import { LocationOn } from "@mui/icons-material";
 import school from '../../assets/school.jpg'
 import outreach from '../../assets/outreach.jpg';
 import billsCleared from "../../assets/projects/billsCleared.jpg";
-import menWalking from "../../assets/projects/hospitalVisit.jpg";
+import parklane from "../../assets/projects/parklane.jpg";
 
 
 const Events = () => {
@@ -17,19 +17,19 @@ const Events = () => {
     {
       title: "School Renovation",
       image: school,
-      date: "may 27th, 2022",
+      date: "July 30, 2021",
       location: "New Haven Primary School, Enugu State",
     },
     {
       title: "Hospital Outreach",
-      image: menWalking,
-      date: "Sept 04, 2022",
+      image: parklane,
+      date: "May 27, 2021",
       location: "ESUT Teaching Hospital, Parklane Enugu State",
     },
     {
       title: "Orthopaedic Visitation",
       image: billsCleared,
-      date: "January 04, 2021",
+      date: "May 27, 2023",
       location: "Orthopaedic Hospital Enugu",
     },
   ];
