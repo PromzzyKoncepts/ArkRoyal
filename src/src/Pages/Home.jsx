@@ -55,10 +55,10 @@ const Home = () => {
             >
               {showDetails && (
                 <div className="people-details">
-                  <h2 className="colored-text">{person.name}</h2>
+                  <h4 className="colored-text">{person.name}</h4>
                   <small>{person.position}</small>
                   <hr></hr>
-                  <br></br>
+                  <br />
                   <p>{person.company}</p>
                   <small className="colored-text">{person.profession}</small>
                 </div>
